@@ -1,0 +1,20 @@
+.sidebar-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: sans-serif;
+  font-size: 20px;
+  background: #4f7bcc;
+  padding: 40px;
+  height: 100vh;
+
+  .sidebar-title{
+    font-weight: 400;
+    font-size: 40px;
+    margin: 20px 0 50px;
+  }
+  
+  .sidebar-route-container{
+    margin: 20px 0 20px;
+  }
+}

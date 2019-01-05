@@ -1,0 +1,13 @@
+.main-container{
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+
+  .main-sidebar{
+    flex-basis: 20%;
+  }
+
+  .main-content{
+    flex-basis: 80%;
+  }
+}

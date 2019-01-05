@@ -1,0 +1,10 @@
+.header-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .header-title{
+    font-family: sans-serif;
+    font-size: 20px;
+  }
+}
