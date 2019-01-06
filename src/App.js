@@ -1,18 +1,14 @@
 import React, { Component } from 'react'
-import Main from './pages';
-import { BrowserRouter as Router } from 'react-router-dom';
+import Main from './pages'
 
 import './app.scss'
 
 class App extends Component {
-
-  render(){
-    return(
-      <Router>
-        <div className="app-container">
-          <Main />
-        </div>
-      </Router>
+  render () {
+    return (
+      <div className='app-container'>
+        <Main />
+      </div>
     )
   }
 }
