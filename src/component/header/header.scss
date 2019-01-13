@@ -1,10 +1,12 @@
 .header-container{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
+  margin: 30px;
 
   .header-title{
-    font-family: sans-serif;
-    font-size: 20px;
+    font-family: Helvetica;
+    font-size: 25px;
+    font-weight: 400;
   }
 }

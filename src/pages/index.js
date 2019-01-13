@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 // import Header from '../component/header'
 import Sidebar from '../component/sidebar'
-import { Route, Switch, Redirect } from 'react-router-dom'
+import { Route, Redirect, Switch } from 'react-router-dom'
 
 import './main.scss'
 import HomeContent from './home'
+import AboutContent from './about'
+import ContactContent from './contact'
 
 class Main extends Component {
   render () {
@@ -17,6 +19,8 @@ class Main extends Component {
           <Switch>
             <Route exact path='/' render={() => <Redirect to='/home' />} />
             <Route exact path='/home' component={HomeContent} />
+            <Route exact path='/about' component={AboutContent} />
+            <Route exact path='/contact' component={ContactContent} />
           </Switch>
         </div>
       </div>

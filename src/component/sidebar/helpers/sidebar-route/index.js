@@ -1,24 +1,25 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
 class SidebarRoute extends Component {
-  constructor(props){
+  constructor (props) {
     super(props)
     this.state = {
       name: this.props.name,
       route: this.props.route
     }
   }
-  render() {
+  render () {
     return (
       <div className='sidebar-route-container'>
-        {this.state.name}
+        <Link to={this.state.route}>{this.state.name}</Link>
       </div>
     )
   }
 }
 
-SidebarRoute.propTypes ={
+SidebarRoute.propTypes = {
   name: PropTypes.string,
   route: PropTypes.string
 }

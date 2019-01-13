@@ -1,25 +1,25 @@
 import React, { Component } from 'react'
 import Header from '../../component/header'
 
-class HomeContent extends Component {
+class ContactContent extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      headerTitle: 'Welcome to my page!',
-      headerContent: ''
+      headerTitle: 'Contact'
     }
   }
-
   render () {
     return (
-      <div className='home-content-container'>
+      <div className='contact-content-container'>
         <Header
           headerTitle={this.state.headerTitle}
         />
-        This is Home
+        <div className='contact-content'>
+          Contact me at my github account
+        </div>
       </div>
     )
   }
 }
 
-export default HomeContent
+export default ContactContent
