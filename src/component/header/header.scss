@@ -1,12 +1,16 @@
+@import '../../../public/style/variable.scss';
+
 .header-container{
   display: flex;
   flex-direction: row;
   justify-content: left;
-  margin: 30px;
+  margin: 24px 0px 32px;
+  padding-bottom: 8px; 
+  font-family: $font-body;
+  font-size: 32px;
+  font-weight: 400;
+  border-bottom: 1px solid #aaaaaa;
 
-  .header-title{
-    font-family: Helvetica;
-    font-size: 25px;
-    font-weight: 400;
-  }
+  // .header-title{
+  // }
 }

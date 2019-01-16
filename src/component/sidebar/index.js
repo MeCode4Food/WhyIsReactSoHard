@@ -8,7 +8,7 @@ class Sidebar extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      title: 'Hello World!',
+      title: 'CK',
       routes: [
         {
           name: 'Home',
