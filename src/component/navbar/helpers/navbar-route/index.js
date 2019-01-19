@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
-class SidebarRoute extends Component {
+class NavbarRoute extends Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -12,16 +12,16 @@ class SidebarRoute extends Component {
   }
   render () {
     return (
-      <div className='sidebar-route-container'>
+      <div className='navbar-route-container'>
         <Link to={this.state.route}>{this.state.name}</Link>
       </div>
     )
   }
 }
 
-SidebarRoute.propTypes = {
+NavbarRoute.propTypes = {
   name: PropTypes.string,
   route: PropTypes.string
 }
 
-export default SidebarRoute
+export default NavbarRoute

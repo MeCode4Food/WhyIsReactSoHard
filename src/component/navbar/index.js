@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import _ from 'lodash'
-import SidebarRoute from './helpers/sidebar-route'
+import NavbarRoute from './helpers/navbar-route'
 
-import './sidebar.scss'
+import './navbar.scss'
 
-class Sidebar extends Component {
+class Navbar extends Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -27,11 +27,11 @@ class Sidebar extends Component {
   }
   render () {
     return (
-      <div className='sidebar-container'>
-        <div className='sidebar-title'>{this.state.title}</div>
+      <div className='navbar-container'>
+        <div className='navbar-title'>{this.state.title}</div>
         {
           _.map(this.state.routes, (route) => {
-            return <SidebarRoute
+            return <NavbarRoute
               name={_.get(route, 'name')}
               route={_.get(route, 'route')}
             />
@@ -42,4 +42,4 @@ class Sidebar extends Component {
   }
 }
 
-export default Sidebar
+export default Navbar

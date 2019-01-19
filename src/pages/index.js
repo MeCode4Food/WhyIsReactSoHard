@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 // import Header from '../component/header'
-import Sidebar from '../component/sidebar'
+import Navbar from '../component/navbar'
 import { Route, Redirect, Switch } from 'react-router-dom'
 
 import './main.scss'
@@ -13,7 +13,7 @@ class Main extends Component {
     return (
       <div className='main-container'>
         <div className='main-sidebar'>
-          <Sidebar />
+          <Navbar />
         </div>
         <div className='main-content'>
           <Switch>
